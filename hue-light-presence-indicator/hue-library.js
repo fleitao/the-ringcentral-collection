@@ -2,7 +2,12 @@ const axios = require('axios')
 const https = require('https')
 
 /*
-IMPORTANT NOTE: we are forcing the HTTPS agent to ignore TLS certificate issues with the server. We do this here because the Philips HUE Bridge uses a self-signed certificate that Axios doesn't like. For this particular usage, this design does not pose a security threat since the Philips HUE Bridge operates on the local private network. However, if your Philips Hue Bridge is somehow being accessed through the public internet, we STRONGLY RECOMMEND that a valid certificate is exchanged instead.
+IMPORTANT NOTE: we are forcing the HTTPS agent to ignore TLS certificate issues with the server. 
+We do this here because the Philips HUE Bridge uses a self-signed certificate that Axios doesn't 
+like. For this particular usage, this design does not pose a security threat since the Philips HUE 
+Bridge operates on the local private network. However, if your Philips Hue Bridge is somehow being 
+accessed through the public internet, we STRONGLY RECOMMEND that a valid certificate is exchanged 
+instead.
 */
 
 // turn hue light on 

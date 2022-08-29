@@ -1,0 +1,80 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Philips Hue Control Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Hue Go is now turned OFF.",
+            "wrap": true
+        },
+
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://www.assets.signify.com/is/image/PhilipsLighting/18e6b4c7053a4dbb9e96aa1c00eb362d?wid=1500&hei=1125&qlt=82"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "choices": [
+                                        {
+                                            "title": "🛑 Turn Light Red",
+                                            "value": "red"
+                                        },
+                                        {
+                                            "title": "🟢 Turn Light Green",
+                                            "value": "green"
+                                        },
+                                        {
+                                            "title": "🔵 Turn Light Blue",
+                                            "value": "blue"
+                                        },
+                                        {
+                                            "title": "⚪ Turn Light White",
+                                            "value": "white"
+                                        }
+                                    ],
+                                    "placeholder": "Select an option",
+                                    "style": "expanded",
+                                    "id": "menu"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Please select an option and press Save.",
+            "wrap": true
+        }
+        ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Save"
+        }
+    ]
+}

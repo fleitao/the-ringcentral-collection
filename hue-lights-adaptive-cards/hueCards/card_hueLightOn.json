@@ -1,0 +1,80 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Philips Hue Control Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Hue Go is now turned White.",
+            "wrap": true
+        },
+
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://www.smartlights.de/wp-content/uploads/Philips-Hue-Go-Stimmungslicht-Farbe-Nahaufnahme.jpg"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "choices": [
+                                        {
+                                            "title": "🛑 Turn Light Red",
+                                            "value": "red"
+                                        },
+                                        {
+                                            "title": "🟢 Turn Light Green",
+                                            "value": "green"
+                                        },
+                                        {
+                                            "title": "🔵 Turn Light Blue",
+                                            "value": "blue"
+                                        },
+                                        {
+                                            "title": "❌ Turn Light Off",
+                                            "value": "off"
+                                        }
+                                    ],
+                                    "placeholder": "Select an option",
+                                    "style": "expanded",
+                                    "id": "menu"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Please select an option and press Save.",
+            "wrap": true
+        }
+        ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Save"
+        }
+    ]
+}

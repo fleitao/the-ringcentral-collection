@@ -51,8 +51,7 @@ app.listen(PORT, () => {
 //  Adaptive Cards Webhook to digest Actions
 app.post('/huemonitor', (req, res) => {
 
-    console.log('[%s] DEBUG - 📧 Adaptive Card Actiion Received: ', get_timestamp());
-    console.log(req.body);
+    console.log('[%s] LOG - 📧 Adaptive Card Actiion Received. ', get_timestamp());
 
     if (req.body && req.body.data.menu) {
 
@@ -92,7 +91,7 @@ app.post('/huemonitor', (req, res) => {
             console.log('[%s] ERROR - 📧 Adaptive Card Action is Corrupted... ignoring! ', get_timestamp());
         }
     } else {
-        console.log('[%s] ERROR - 📧 No Adaptive Card Action Received... ignoring! ', get_timestamp());
+        console.log('[%s] ERROR - 📧 Not able to recognize Action... ignoring! ', get_timestamp());
     }
 
     res.end()
@@ -113,8 +112,8 @@ async function sendRCAdaptiveCard(rcCard) {
             },
         })
         .then(res => {
-            console.log(res.status);
-            console.log(res.statusText);
+            if (res.status && res.statusText)
+                console.log("[%s] LOG - 📩 New Adaptive Card posted with status: [%s|%s]", get_timestamp(), res.status, res.statusText);
         })
         .catch(error => {
             console.log(error.response.data);
@@ -139,8 +138,8 @@ async function getRCToken() {
                     'content-type': 'application/x-www-form-urlencoded'
                 },
                 auth: {
-                    'username': process.env.RC_USERNAME,
-                    'password': process.env.RC_PASSWORD
+                    'username': process.env.RC_CLIENT_ID,
+                    'password': process.env.RC_CLIENT_SECRET
                 },
             })
         .then(res => {

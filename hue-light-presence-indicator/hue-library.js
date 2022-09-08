@@ -10,14 +10,29 @@ accessed through the public internet, we STRONGLY RECOMMEND that a valid certifi
 instead.
 */
 
+function get_timestamp() {
+
+    var now = new Date();
+
+    return 'utc|' + now.getUTCFullYear() +
+        '/' + (now.getUTCMonth() + 1) +
+        '/' + now.getUTCDate() +
+        '|' + now.getHours() +
+        ':' + now.getMinutes() +
+        ':' + now.getSeconds() +
+        ':' + now.getMilliseconds();
+
+}
+
 // turn hue light on 
 function turnLightOn(bridgeAddress, hueDevId, lightId) {
 
     axios.put('https://' + bridgeAddress + '/api/' + hueDevId + '/lights/' + lightId + '/state', {
         on: true,
-        sat: 254,
-        bri: 254,
-        hue: 25500
+        sat: 100,
+        bri: 100,
+        hue: 50000,
+        xy: [0.3410, 0.3386]
     }, {
         headers: {
             'Content-Type': 'application/json'
@@ -27,9 +42,9 @@ function turnLightOn(bridgeAddress, hueDevId, lightId) {
         })
     }).then(res => {
         if (res.data)
-            console.log('💡 HUE - light turned on 💡')
+            console.log("[%s] LOG - 💡 HUE - light turned on 💡", get_timestamp())
     }).catch(error => {
-        console.log('💡 HUE ERROR - Unable to change Hue light status')
+        console.log("[%s] ERROR - HUE ERROR - Unable to change Hue light status", get_timestamp())
         console.log(JSON.stringify(error));
     });
 }
@@ -48,9 +63,9 @@ function turnLightOff(bridgeAddress, hueDevId, lightId) {
         })
     }).then(res => {
         if (res.data)
-            console.log('💡 HUE - light turned off ❌')
+            console.log("[%s] LOG - 💡 HUE - light turned off ❌", get_timestamp())
     }).catch(error => {
-        console.log('💡 HUE ERROR - Unable to change Hue light status')
+        console.log("[%s] ERROR - 💡 HUE ERROR - Unable to change Hue light status", get_timestamp())
         console.log(JSON.stringify(error));
     });
 }
@@ -59,9 +74,10 @@ function turnLightOff(bridgeAddress, hueDevId, lightId) {
 function setLightColor(bridgeAddress, hueDevId, lightId, lightColor) {
 
     axios.put('https://' + bridgeAddress + '/api/' + hueDevId + '/lights/' + lightId + '/state', {
+        on: true,
         sat: 254,
         bri: 254,
-        hue: lightColor // green (25500) / red (65535)
+        hue: lightColor // green (25500) / red (65535) / blue (43690) / purple (50000)
     }, {
         headers: {
             'Content-Type': 'application/json'
@@ -74,13 +90,18 @@ function setLightColor(bridgeAddress, hueDevId, lightId, lightColor) {
             let changedColor = ''
             if (lightColor == 65535) {
                 changedColor = '🛑';
-            } else {
-                changedColor = '🟩';
+            } else if (lightColor == 25500) {
+                changedColor = '🟢';
+            } else if (lightColor == 46920) {
+                changedColor = '🔵';
+            } else if (lightColor == 50000) {
+                changedColor = '🟣';
             }
-            console.log('💡 HUE - light color changed: %s', changedColor)
+
+            console.log("[%s] LOG - 💡 HUE - light color changed: %s", get_timestamp(), changedColor)
         }
     }).catch(error => {
-        console.log('💡 HUE ERROR - Unable to change Hue light status')
+        console.log("[%s] ERROR - 💡 HUE ERROR - Unable to change Hue light status", get_timestamp())
         console.log(JSON.stringify(error));
     });
 }

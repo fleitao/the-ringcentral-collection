@@ -156,4 +156,4 @@ async function getRCToken() {
         });
 
     return token_data;
-}
+};

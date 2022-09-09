@@ -36,7 +36,7 @@ app.listen(process.env.HUE_PORT, () => {
 
 });
 
-app.post('/hue', (req, res) => {
+app.post('/presence', (req, res) => {
 
     // RingCentral Validation Token
     if (req.headers.hasOwnProperty("validation-token")) {

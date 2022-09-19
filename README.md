@@ -17,11 +17,14 @@ This is a small repository that collects scripts, apps and code snippets, built 
 
 ## SDKs and APIs Covered
 
-* [placeholder](https://developers.ringcentral.com/)
+* [RingCentral's Voice API](https://developers.ringcentral.com/guide/voice)
+* [RingCentral's Subscriptions API](https://developers.ringcentral.com/guide/notifications)
 
 ## Basic Requirements 
 
-placeholder
+For the use of any RingCentral API you will require a RingCentral Account with access to the [Developer Portal](https://developers.ringcentral.com/). 
+
+Need a developer account? You can create one [here](https://developers.ringcentral.com/free-tier-sign-up.html).
 
 ## Disclaimer & Future Updates
 

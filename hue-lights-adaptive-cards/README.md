@@ -1,6 +1,6 @@
 <div align="center">
   
-# Philips Hue Control Center for RingCentral & Adaptive Cards
+# Philips Hue Lights Control Central on RingCentral using Adaptive Cards 
 Use your RingCentral MVP as Control Center for remote control over your Philips Hue light colour using this simple node.js script. 
 
 

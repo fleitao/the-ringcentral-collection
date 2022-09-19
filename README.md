@@ -19,6 +19,7 @@ This is a small repository that collects scripts, apps and code snippets, built 
 
 * [RingCentral's Voice API](https://developers.ringcentral.com/guide/voice)
 * [RingCentral's Subscriptions API](https://developers.ringcentral.com/guide/notifications)
+* [RingCentral's Team Messaging API](https://developers.ringcentral.com/guide/team-messaging)
 
 ## Basic Requirements 
 

@@ -11,8 +11,8 @@ My collection of basic scripts and app samples built on top of [RingCentral Deve
 
 This is a small repository that collects scripts, apps and code snippets, built to demonstrate the capabilities of [RingCentral Developer APIs](https://developers.ringcentral.com/). Simple examples to help you understand the structure of the SDKs/APIs and how they could fit your app integration.
 
-* **[hue-light-presence-indicator](https://github.com/fleitao/the-ringcentral-collection/tree/main/hue-light-presence-indicator)**: Using Philips Hue as presence indicator for RingCentral MVP (work in progress)
-* **[hue-lights-adaptive-cards](https://github.com/fleitao/the-ringcentral-collection/tree/main/hue-lights-adaptive-cards)**: Using RingCentral MVP to remote control Philips Hue lamps through the use of [Adaptive Cards](https://developers.ringcentral.com/guide/team-messaging/adaptive-cards) (work in progress)
+* **[hue-light-presence-indicator](https://github.com/fleitao/the-ringcentral-collection/tree/main/hue-light-presence-indicator)**: Using Philips Hue as presence indicator for RingCentral MVP
+* **[hue-lights-adaptive-cards](https://github.com/fleitao/the-ringcentral-collection/tree/main/hue-lights-adaptive-cards)**: Using RingCentral to control Philips Hue lamps through the use of [Adaptive Cards](https://developers.ringcentral.com/guide/team-messaging/adaptive-cards)
 
 
 ## SDKs and APIs Covered

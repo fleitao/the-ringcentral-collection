@@ -3,6 +3,10 @@
 # Hue Light Presence Indicator
 Use your Philips Hue light colour to reflect your RingCentral presence status using this simple node.js script. 
 
+
+<img src="https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/main/hue-light-presence-indicator/resources/hue_presence_diagram.png" align="center">
+
+
 </div>
 
 # What You'll Need
@@ -61,7 +65,7 @@ These dependencies do not come as default node.js modules and you can fetch and 
 
 # The Basics
 
-Before executing the script there are two things you'll need to take care first.
+Before executing the script there are a couple of things you'll need to take care first.
 
 ## Setup your .env file
 
@@ -106,7 +110,9 @@ HUE_LIGHT_ID        = '18'
 
 The script is ready to automatically fetch new a new Bearer Token using the JWT method. For that, simply leave the `RC_BEARER_TOKEN` field blank.
 
-`HUE_SERVER` will be using the ngrok URL generated previously, adding `/presence`. `HUE_PORT` is 8088 by default. Change it here in case you need to use a different Port number.
+`HUE_SERVER` will be using the ngrok URL generated previously, adding `/presence`. 
+
+`HUE_PORT` is 8088 by default. Change it here in case you need to use a different Port number.
 
 `HUE_BRIDGE` IP Address, the `HUE_DEV_ID` (developer ID) and your `HUE_LIGHT_ID` can be easily found using Philips Hue developer tools. You'll find almost everything required to run this exercise in Philips Hue's `Getting Started` tutorial that can be found [here](https://developers.meethue.com/develop/get-started-2/).
 
@@ -115,7 +121,7 @@ The script is ready to automatically fetch new a new Bearer Token using the JWT 
 You should be ready to try the script now. Let us test this out in the following order:
 
 1. Turn on your Philips Hue lamp
-2. Start the webhook listener app (light should turn light white)
+2. Start the webhook listener app (light should turn white)
 3. Open your RingCentral app (desktop or [web-browser](https://app.ringcentral.com/))
 3. Start making or receiving calls or manually change your presence status
 
@@ -140,5 +146,5 @@ $ node rc-hue-presence-server.js
 
 If you are having trouble with the setup, I've recorded a video where I'm walking through this example. To watch it, simply click on the picture/link below:
 
-[![smsscript](https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/main/hue-light-presence-indicator/resources/hue_presence_demo_cover.png)](https://youtu.be/w--DD7qJFSg)
+[![huepresence](https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/main/hue-light-presence-indicator/resources/hue_presence_demo_cover.png)](https://youtu.be/w--DD7qJFSg)
 

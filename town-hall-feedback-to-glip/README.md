@@ -4,7 +4,7 @@
 Send your citizens' feedback directly to a RingEX glip group.
 
 
-<img src="placeholder to image" align="center">
+*PLACEHOLDER FOR IMAGE*
 
 
 </div>

@@ -13,7 +13,6 @@ Send your citizens' feedback directly to a RingEX glip group.
 
 * [ngrok](https://ngrok.com/) (optional)
 * [RingCentral Developer Account](https://developers.ringcentral.com/login.html#/)
-* [Philips Hue Lamp](https://www.philips-hue.com/en-gb) 
 * [Cloudinary Account](https://cloudinary.com/)
 * [node.js](https://nodejs.org/)
 

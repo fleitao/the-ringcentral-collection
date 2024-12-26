@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Town Hall Citizen Feedback Service</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/previews/026/574/662/original/city-hall-building-icon-city-hall-sign-town-hall-symbol-municipal-building-logo-flat-style-vector.jpg" />
+
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+
+            background: white;
+            font-weight: 50;
+            letter-spacing: 2px;
+
+            color: #00587c;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="about">
+            <p class="text-wrap" style="text-align: left">
+                <img src="https://fleitao.org/demos/ringcentral/resources/citizen_feedback_platform.jpg" />
+            </p>
+            <h2 style="font-family: verdana">Complaints and Feedback</h2>
+            <p style="font-align: justify">
+                Have you seen something that doesn't look right?
+            </p>
+            <p style="font-align: justify">
+                Please use the form below to send us a picture.
+            </p>
+
+
+
+            <form class="form-signin" method="post" enctype="multipart/form-data" action="https://****.ngrok-free.app/upload">
+                <label style="font-family: verdana" for="number"><small>Name:</small></label>
+                <input class="form-control" type="text" required name="name" placeholder="John" />
+
+                <br />
+                <label style="font-family: verdana" for="number"><small>Surname:</small></label>
+                <input class="form-control" type="text" required name="surname" placeholder="Garcia" />
+
+                <br />
+                <label style="font-family: verdana" for="number"><small>Phone:</small></label>
+                <input class="form-control" type="text" required name="number" placeholder="0123456789" />
+                <br />
+                <label style="font-family: verdana" for="number"><small>Address:</small></label>
+                <input class="form-control" type="text" required name="street" placeholder="Sesame Street 123" />
+                <br /><br />
+
+                <label style="font-family: verdana" for="image"><small>Picture:</small></label>
+                <input type="file" name="image">
+                <br /><br />
+
+                <button style="font-family: verdana" class="btn btn-lg btn-primary btn-block" type="submit">
+                    upload
+                </button>
+            </form>
+
+            <br />
+        </div>
+    </div>
+</body>
+
+</html>

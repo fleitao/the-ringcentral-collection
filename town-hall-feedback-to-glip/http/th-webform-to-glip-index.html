@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Town Hall Citizen Feedback Service</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/previews/026/574/662/original/city-hall-building-icon-city-hall-sign-town-hall-symbol-municipal-building-logo-flat-style-vector.jpg" />
+
+    <style>
+        body {
+            background: white;
+            overflow: scroll;
+            font-size: 20px;
+            font-weight: 50;
+            letter-spacing: 2px;
+            text-transform: normal;
+            color: #00587c;
+        }
+
+        .black_btn {
+            width: 350px;
+            padding: 20px 0;
+            background: black;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin: auto;
+            cursor: pointer;
+            clear: both;
+        }
+
+        .top {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .bottom {
+            margin-top: 200px;
+        }
+
+        #container {
+            width: 950px;
+            text-align: left;
+            margin: auto;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        #images {
+            margin-top: 20px;
+        }
+
+        li {
+            text-align: right;
+            display: inline-block;
+        }
+
+        #images .image {
+            display: inline-block;
+        }
+
+        #images .text {
+            text-align: center;
+            vertical-align: top;
+            margin: 10px 0 80px 0;
+        }
+
+        a {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="about">
+            <p style="text-align: left">
+                <img src="https://fleitao.org/demos/ringcentral/resources/citizen_feedback_platform.jpg" />
+            </p>
+            <h2 style="font-family: verdana">Complaints and Feedback</h2>
+            <p style="font-align: justify">
+                Have you seen something that doesn't look right?
+            </p>
+            <p style="font-align: justify">
+                Please use the form below to send us a message.
+            </p>
+            <form class="form-signin" method="GET" action="https://6b27-176-199-211-38.ngrok-free.app/webform">
+                <br />
+                <label style="font-family: verdana" for="number"><small>ID Number:</small></label>
+                <input class="form-control" type="text" required name="nif" placeholder="99999999R" />
+
+                <br />
+                <label style="font-family: verdana" for="number"><small>Name:</small></label>
+                <input class="form-control" type="text" required name="name" placeholder="John" />
+
+                <br />
+                <label style="font-family: verdana" for="number"><small>Surname:</small></label>
+                <input class="form-control" type="text" required name="surname" placeholder="Garcia" />
+
+                <br />
+                <label style="font-family: verdana" for="number"><small>Phone Number:</small></label>
+                <input class="form-control" type="text" required name="number" placeholder="0123456789" />
+
+                <br />
+                <label style="font-family: verdana" for="number"><small>Email:</small></label>
+                <input class="form-control" type="text" required name="email" placeholder="my@email.com" />
+
+                <br /><br />
+                <label style="font-family: verdana" for="number"><small>Message:</small></label>
+                <br />
+                <textarea id="Mensaje" name="message" rows="3" class="form-control" maxlength="4000" required="" spellcheck="false" style="width: 516px; height: 177px"></textarea>
+
+                <br /><br />
+
+                <button style="font-family: verdana" class="btn btn-lg btn-primary btn-block" type="submit">
+                    Enviar
+                </button>
+            </form>
+            <br />
+        </div>
+    </div>
+</body>
+
+</html>

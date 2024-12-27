@@ -3,9 +3,7 @@
 # Town Hall Feedback to Glip
 Send your citizens' feedback directly to a RingEX glip group.
 
-
 <img src="https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/2b84794050cb961264d22b127a305ed788e84230/town-hall-feedback-to-glip/resources/th-flow-diagram.jpg" align="center">
-
 
 </div>
 

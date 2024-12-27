@@ -122,6 +122,12 @@ To make it easy to test, I've created a few basic html web portals that you can 
 </p>
 
 
+## Receiving the Adaptive Card
+
+Once the form is submitted and a picture is sent, the RingCentral messaging page monitored by the Town Hall staff will receive all information. From that moment, the staff can use RingCentral's app click-to-call to connect with the citizen who submitted the form or hand it over to the corresponding staff members who need to take action.
+
+<img src="https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/refs/heads/main/town-hall-feedback-to-glip/resources/th-staff.jpg" align="center">
+
 # Light It Up
 
 You should be ready to try the script now. Let us test this out in the following order:

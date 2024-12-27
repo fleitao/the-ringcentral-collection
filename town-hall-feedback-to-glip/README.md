@@ -116,7 +116,9 @@ The script is ready to automatically fetch new a new Bearer Token using the JWT 
 To make it easy to test, I've created a few basic html web portals that you can find on this page. In reality, you could be using whatever you would like, as long as the basic information expected by the script is submitted: name, surname, phone, address and of course, the picture.
 
 
-*PLACEHOLDER FOR SCREENSHOtS*
+<img src="https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/refs/heads/main/town-hall-feedback-to-glip/resources/th-citizen1.jpg" align="center">
+<img src="https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/refs/heads/main/town-hall-feedback-to-glip/resources/th-citizen3.jpg" align="center">
+<img src="https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/refs/heads/main/town-hall-feedback-to-glip/resources/th-citizen2.jpg" align="center">
 
 
 # Light It Up

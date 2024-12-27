@@ -54,7 +54,7 @@ For this script, we're using node.js with several dependencies that are being us
 
 These dependencies do not come as default node.js modules and you can fetch and install them by executing the following on the root directory of the script:
 
-```npm install axios express body-parser querystring dotenv path cloudinary```
+```npm install axios express body-parser querystring dotenv path multer cloudinary```
 
 ## Free Cloudinary Account
 

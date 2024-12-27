@@ -21,7 +21,7 @@ const formData = require("form-data");
 require("dotenv").config();
 
 const app = express();
-const PORT = 8089;
+const PORT = process.env.RC_PORT;
 
 app.use(bodyParser.json());
 
@@ -219,8 +219,7 @@ app.post('/upload', upload.fields([
 
         const card_response = await sendRCAdaptiveCard(process.env.RC_GROUP, l_rcCard);
 
-        res.status(200).sendFile(
-            "/Users/filipe.leitao/DevCenter/the-ringcentral-collection/webform-to-glip/http/th-webform-to-glip-thankyou.html");
+        res.status(200).sendFile(__dirname + "/http/th-webform-to-glip-thankyou.html");
     } catch (error) {
         console.error('Error uploading file:', error);
         res.status(500).send('Error uploading file');

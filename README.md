@@ -13,6 +13,7 @@ This is a small repository that collects scripts, apps and code snippets, built 
 
 * **[hue-light-presence-indicator](https://github.com/fleitao/the-ringcentral-collection/tree/main/hue-light-presence-indicator)**: Using Philips Hue as presence indicator for RingCentral MVP
 * **[hue-lights-adaptive-cards](https://github.com/fleitao/the-ringcentral-collection/tree/main/hue-lights-adaptive-cards)**: Using RingCentral to control Philips Hue lamps through the use of [Adaptive Cards](https://developers.ringcentral.com/guide/team-messaging/adaptive-cards)
+* **[town-hall-feedback-to-glip](https://github.com/fleitao/the-ringcentral-collection/tree/main/town-hall-feedback-to-glip)**: Send your citizens' feedback directly to a RingEX glip group using [Adaptive Cards](https://developers.ringcentral.com/guide/team-messaging/adaptive-cards)
 
 
 ## SDKs and APIs Covered

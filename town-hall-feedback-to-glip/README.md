@@ -154,8 +154,5 @@ $ node th-webmedia-to-glip.js
 # See It In Action
 If you are having trouble with the setup, I've recorded a video where I'm walking through this example. To watch it, simply click on the picture/link below:
 
-*PLACEHOLDER FOR VIDEO*
+[![huepresence](https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/refs/heads/main/town-hall-feedback-to-glip/resources/th-video-screenshot.jpg)](https://youtu.be/v_5DzYnN2kQ)
 
-<!--
-[![huepresence](https://raw.githubusercontent.com/fleitao/the-ringcentral-collection/main/hue-light-presence-indicator/resources/hue_presence_demo_cover.png)](https://youtu.be/w--DD7qJFSg)
--->
